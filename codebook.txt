@@ -1,0 +1,138 @@
+CODE BOOK for the end of class project in Getting and Cleaning Data
+L. K. Campbell
+
+There are 81 variables in the final tidy data set.  Each record relates to one participant performing
+one of the six activities, so the first two variables are:
+
+subject: This is an integer between 1 and 30 indicating which of the 30 study participants the
+	data pertains to.
+
+activity: Each of the participants was tested doing each of 6 different activities (Walking, Walking Up,
+	Walking Down, Sitting, Standing, and Laying)
+
+The remaining 79 variables record the average value for that subject/activity pair for each of the variables
+listed below.
+
+[Note: Raw data on acceleration was divided into two components, acceleration of the body and gravity.]
+
+Body's linear acceleration (measured by accelerometer) in each of three axial directions measured in the time domain:
+BodyAccelerationXdirection_meantime
+BodyAccelerationYdirection_meantime
+BodyAccelerationZdirection_meantime
+BodyAccelerationXdirection_stdtime
+BodyAccelerationYdirection_stdtime
+BodyAccelerationZdirection_stdtime
+
+Gravity's linear acceleration in each of three axial directions measured in the time domain:
+GravityAccelerationXdirection_meantime
+GravityAccelerationYdirection_meantime
+GravityAccelerationZdirection_meantime
+GravityAccelerationXdirection_stdtime
+GravityAccelerationYdirection_stdtime
+GravityAccelerationZdirection_stdtime
+
+Jerk signal values calculated in time from the body's linear acceleration data (units are time):
+BodyAccelerationJerkXdirection_meantime
+BodyAccelerationJerkYdirection_meantime
+BodyAccelerationJerkZdirection_meantime
+BodyAccelerationJerkXdirection_stdtime
+BodyAccelerationJerkYdirection_stdtime
+BodyAccelerationJerkZdirection_stdtime
+
+Body's angular velocity (determined by gyroscope) in each of three axial directions in time domain:
+BodyAngularVelocityXdirection_meantime
+BodyAngularVelocityYdirection_meantime
+BodyAngularVelocityZdirection_meantime
+BodyAngularVelocityXdirection_stdtime
+BodyAngularVelocityYdirection_stdtime
+BodyAngularVelocityZdirection_stdtime
+
+Jerk signal values calculated in time from the body's angular acceleration data: (only done on body values)
+BodyAngularVelocityJerkXdirection_meantime
+BodyAngularVelocityJerkYdirection_meantime
+BodyAngularVelocityJerkZdirection_meantime
+BodyAngularVelocityJerkXdirection_stdtime
+BodyAngularVelocityJerkYdirection_stdtime
+BodyAngularVelocityJerkZdirection_stdtime
+
+Magnitude, computed as the Euclidean norm, was computed to reduce the 3-dimensional data to one summary value:
+BodyAccelerationMagnitude_meantime
+BodyAccelerationMagnitude_stdtime
+GravityAccelerationMagnitude_meantime
+GravityAccelerationMagnitude_stdtime
+BodyAccelerationJerkMagnitude_meantime
+BodyAccelerationJerkMagnitude_stdtime
+BodyAngularVelocityMagnitude_meantime
+BodyAngularVelocityMagnitude_stdtime
+BodyAngularVelocityJerkMagnitude_meantime
+BodyAngularVelocityJerkMagnitude_stdtime
+
+Fast Fourier Transfer (FFT) values on the body's linear acceleration in each of three axial directions:
+	[Note: these are frequencies.]
+BodyAccelerationXdirection_meanfourier
+BodyAccelerationYdirection_meanfourier
+BodyAccelerationZdirection_meanfourier
+BodyAccelerationXdirection_stdfourier
+BodyAccelerationYdirection_stdfourier
+BodyAccelerationZdirection_stdfourier
+
+FFT values for computed mean frequency data on body acceleration:
+BodyAccelerationFrequencyXdirection_meanfourier
+BodyAccelerationFrequencyYdirection_meanfourier
+BodyAccelerationFrequencyZdirection_meanfourier
+
+FFT values on the jerk numbers for the body's linear acceleration in each of 3 axial directions:
+BodyAccelerationJerkXdirection_meanfourier
+BodyAccelerationJerkYdirection_meanfourier
+BodyAccelerationJerkZdirection_meanfourier
+BodyAccelerationJerkXdirection_stdfourier
+BodyAccelerationJerkYdirection_stdfourier
+BodyAccelerationJerkZdirection_stdfourier
+
+FFT values for the Body Acceleration Jerk Frequencies in each of the 3 axial directions:
+BodyAccelerationJerkFrequencyXdirection_meanfourier
+BodyAccelerationJerkFrequencyYdirection_meanfourier
+BodyAccelerationJerkFrequencyZdirection_meanfourier
+
+
+BodyAngularVelocityXdirection_meanfourier
+BodyAngularVelocityYdirection_meanfourier
+BodyAngularVelocityZdirection_meanfourier
+BodyAngularVelocityXdirection_stdfourier
+BodyAngularVelocityYdirection_stdfourier
+BodyAngularVelocityZdirection_stdfourier
+
+FFT transformation values for the Body Angular Velocity Frequencies in the 3 axial directions:
+BodyAngularVelocityFrequencyXdirection_meanfourier
+BodyAngularVelocityFrequencyYdirection_meanfourier
+BodyAngularVelocityFrequencyZdirection_meanfourier
+
+FFT transformation data on the magnitudes computed earlier using Euclidean norms of the 3 axial direction readings:
+BodyAccelerationMagnitude_meanfourier
+BodyAccelerationMagnitude_stdfourier
+BodyAccelerationFrequencyMagnitude_meanfourier
+BodyAccelerationJerkMagnitude_meanfourier
+BodyAccelerationJerkMagnitude_stdfourier
+BodyAccelerationJerkFrequencyMagnitude_meanfourier
+BodyAngularVelocityMagnitude_meanfourier
+BodyAngularVelocityMagnitude_stdfourier
+BodyAngularVelocityFrequencyMagnitude_meanfourier
+BodyAngularVelocityJerkMagnitude_meanfourier
+BodyAngularVelocityJerkMagnitude_stdfourier
+BodyAngularVelocityJerkFrequencyMagnitude_meanfourier
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
